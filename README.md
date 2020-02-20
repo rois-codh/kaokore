@@ -3,7 +3,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)  
 
 
-📚 [Read the paper] (TODO: fill the to-be arXiv link) to learn more about Kaokore dataset, our motivations in making them, as well as creativity usage of it!
+📚 [Read the paper]  ADD LINK!! to learn more about Kaokore dataset, our motivations in making them, as well as creativity usage of it!
 
 ## The Dataset
 
