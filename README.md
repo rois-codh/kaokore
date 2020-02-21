@@ -56,9 +56,9 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |Inception-v3    |96.58% | 84.25% | [alantian](https://github.com/alantian) |
 
 ## Generative Models Demo Videos
-Please download generative model demo video from here.
-[Learning to painting](http://codh.rois.ac.jp/face/dataset/demo/learning-to-painting_drawings.zip)
-[Intrinsic style transfer drawing](http://codh.rois.ac.jp/face/dataset/demo/intrinsic-style-transfer_drawings.zip)
+Please download generative model demo video from here. 
+1. [Learning to painting](http://codh.rois.ac.jp/face/dataset/demo/learning-to-painting_drawings.zip)
+2. [Intrinsic style transfer drawing](http://codh.rois.ac.jp/face/dataset/demo/intrinsic-style-transfer_drawings.zip)
 
 
 ## Citing KaoKore dataset
