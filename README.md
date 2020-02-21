@@ -3,7 +3,7 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)  
 
 
-📚 [Read the paper]  ADD LINK!! to learn more about Kaokore dataset, our motivations in making them, as well as creativity usage of it!
+📚 [Read the paper](https://arxiv.org/abs/2002.08595) to learn more about Kaokore dataset, our motivations in making them, as well as creativity usage of it!
 
 ## The Dataset
 
@@ -59,17 +59,16 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 ## Citing KaoKore dataset
 If you use any of the Kaokore datasets in your work, we would appreciate a reference to our paper:
 
-**KaoKore dataset etc. Yingtao Tian et al. [arXiv:1812.01718](https://arxiv.org/abs/1812.01718)** update the link
+**KaoKore dataset etc. Yingtao Tian et al. [arXiv:2002.08595](https://arxiv.org/abs/2002.08595)** update the link
 
 ```latex
-@online{clanuwat2018deep,
-  author       = {Tarin Clanuwat and Mikel Bober-Irizar and Asanobu Kitamoto and Alex Lamb and Kazuaki Yamamoto and David Ha},
-  title        = {Deep Learning for Classical Japanese Literature},
-  date         = {2018-12-03},
-  year         = {2018},
-  eprintclass  = {cs.CV},
-  eprinttype   = {arXiv},
-  eprint       = {cs.CV/1812.01718},
+@misc{tian2020kaokore,
+    title={KaoKore: A Pre-modern Japanese Art Facial Expression Dataset},
+    author={Yingtao Tian and Chikahiko Suzuki and Tarin Clanuwat and Mikel Bober-Irizar and Alex Lamb and Asanobu Kitamoto},
+    year={2020},
+    eprint={2002.08595},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
 
