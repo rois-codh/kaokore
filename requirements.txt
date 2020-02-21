@@ -1,0 +1,7 @@
+pillow==7.0.*
+torch==1.4.*
+tqdm==4.43.*
+numpy==1.18.*
+pandas==1.0.*
+keras==2.3.*
+lycon==0.2.*
