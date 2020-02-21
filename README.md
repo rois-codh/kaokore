@@ -7,7 +7,7 @@
 
 ## The Dataset
 
-_KaoKore_ is a novel dataset of face images from Japanese illustrations along with multiple labels for each face, derived from the [_Facial Expressions Collections_](http://codh.rois.ac.jp/face/). 
+_KaoKore_ is a novel dataset of face images from Japanese illustrations along with multiple labels for each face, derived from the [_Collections of Facial Expressions_](http://codh.rois.ac.jp/face/). 
 
 _KaoKore_ dataset is build based on the [_Collections of Facial Expressions_](http://codh.rois.ac.jp/face/), which  results from an effort by the ROIS-DS Center for Open Data in the Humanities (CODH) that has been publicly available since 2018. 
 It provides a dataset of cropped face images extracted from Japanese artworks publicly available from National Institute of Japanese Literature, Kyoto University Rare Materials Digital Archive and Keio University Media Center from the Late Muromachi Period (16th century) to the Early Edo Period (17th century) to facilitate research into art history, especially the study of artistic style. It also provides corresponding metadata annotated by researchers with domain expertise.
@@ -54,6 +54,11 @@ Have more results to add to the table? Feel free to submit an [issue](https://gi
 |MobileNet-v2    |95.06% | 82.35% | [alantian](https://github.com/alantian) |
 |DenseNet-121   |94.31% | 79.70% | [alantian](https://github.com/alantian) |
 |Inception-v3    |96.58% | 84.25% | [alantian](https://github.com/alantian) |
+
+## Generative Models Demo Videos
+Please download generative model demo video from here.
+[Learning to painting](http://codh.rois.ac.jp/face/dataset/demo/learning-to-painting_drawings.zip)
+[Intrinsic style transfer drawing](http://codh.rois.ac.jp/face/dataset/demo/intrinsic-style-transfer_drawings.zip)
 
 
 ## Citing KaoKore dataset
