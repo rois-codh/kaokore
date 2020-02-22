@@ -81,5 +81,4 @@ If you use any of the Kaokore datasets in your work, we would appreciate a refer
 
 Both the dataset itself and the contents of this repo are licensed under a permissive  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license, except where specified within some benchmark scripts. CC BY-SA 4.0 license requires attribution, and we would suggest to use the following attribution to the KaoKore dataset.
 
-"KaoKore Dataset" (created by CODH), adapted from "etc" 
-(created by NIJL and others), doi:10.20676/00000353
+"KaoKore Dataset" (collected by CODH from multiple organizations), doi:10.20676/00000353
