@@ -12,7 +12,7 @@ _KaoKore_ is a novel dataset of face images from Japanese illustrations along wi
 _KaoKore_ dataset is build based on the [_Collection of Facial Expressions_](http://codh.rois.ac.jp/face/), which  results from an effort by the ROIS-DS Center for Open Data in the Humanities (CODH) that has been publicly available since 2018. 
 It provides a dataset of cropped face images extracted from Japanese artworks publicly available from National Institute of Japanese Literature, Kyoto University Rare Materials Digital Archive and Keio University Media Center from the Late Muromachi Period (16th century) to the Early Edo Period (17th century) to facilitate research into art history, especially the study of artistic style. It also provides corresponding metadata annotated by researchers with domain expertise.
 
-KaoKore dataset contains 5552 image files, each being an color (RGB) image of size 256 x 256 as well as two sets of labels _gender_ and _social status_.. 
+KaoKore dataset contains 5552 image files, each being an color (RGB) image of size 256 x 256 as well as two sets of labels _gender_ and _social status_.
 
 <p align="center">
   <img src="images/fig/dataset_example.png" width='768'>
@@ -35,6 +35,8 @@ KaoKore dataset contains 5552 image files, each being an color (RGB) image of si
 See the output of `download.py --help` for more details.
 
 It is known that some conda installations may have trouble looking for SSL certificates. If that is the case, you could use `download.py --ssl_unverified_context`, **at your own risk and only if you know what you are doing**, to disable the certificate verification.
+
+Please note that we **intentionally** did not include include image data into the dataset so that image providers can check which images are used. We request not to create a derived dataset that includes image data just for convenience. 
 
 ### The Data Loaders
 
