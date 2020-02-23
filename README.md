@@ -3,13 +3,13 @@
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-sa/4.0/)  
 
 
-📚 [Read the paper](https://arxiv.org/abs/2002.08595) to learn more about Kaokore dataset, our motivations in making them, as well as creativity usage of it!
+📚 [Read the paper](https://arxiv.org/abs/2002.08595) to learn more about Kaokore dataset, our motivations in making them, as well as creative usage of it!
 
 ## The Dataset
 
 _KaoKore_ is a novel dataset of face images from Japanese illustrations along with multiple labels for each face, derived from the [_Collection of Facial Expressions_](http://codh.rois.ac.jp/face/). 
 
-_KaoKore_ dataset is build based on the [_Collection of Facial Expressions_](http://codh.rois.ac.jp/face/), which  results from an effort by the ROIS-DS Center for Open Data in the Humanities (CODH) that has been publicly available since 2018. 
+_KaoKore_ dataset is build based on the [_Collection of Facial Expressions_](http://codh.rois.ac.jp/face/), which results from an effort by the ROIS-DS Center for Open Data in the Humanities (CODH) that has been publicly available since 2018. 
 It provides a dataset of cropped face images extracted from Japanese artworks publicly available from National Institute of Japanese Literature, Kyoto University Rare Materials Digital Archive and Keio University Media Center from the Late Muromachi Period (16th century) to the Early Edo Period (17th century) to facilitate research into art history, especially the study of artistic style. It also provides corresponding metadata annotated by researchers with domain expertise.
 
 KaoKore dataset contains 5552 image files, each being an color (RGB) image of size 256 x 256 as well as two sets of labels _gender_ and _social status_.
@@ -43,7 +43,7 @@ Please note that we **intentionally** did not include image data into the datase
 Data loaders for _Pytorch_ and _TensorFlow_ are available in code folder.
 
 ## Benchmarks & Results 📈
-We provide quantitative resultson the supervised machine learning tasks of gender and social status prediction from KaoKore images. (Keras classification code is available in code folder)
+We provide quantitative results on the supervised machine learning tasks of gender and social status prediction from KaoKore images. (Keras classification code is available in code folder)
 
 Have more results to add to the table? Feel free to submit an [issue](https://github.com/rois-codh/kaokore/issues/new) or [pull request](https://github.com/rois-codh/kaokore/compare)! (update the link****)
 
