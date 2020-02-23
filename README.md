@@ -36,7 +36,7 @@ See the output of `download.py --help` for more details.
 
 It is known that some conda installations may have trouble looking for SSL certificates. If that is the case, you could use `download.py --ssl_unverified_context`, **at your own risk and only if you know what you are doing**, to disable the certificate verification.
 
-Please note that we **intentionally** did not include include image data into the dataset so that image providers can check which images are used. We request not to create a derived dataset that includes image data just for convenience. 
+Please note that we **intentionally** did not include image data into the dataset so that image providers can check which images are used. We request not to create a derived dataset including image data for user's convenience. 
 
 ### The Data Loaders
 
