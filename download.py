@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
-import glob
 import os
-import subprocess
 import sys
 from os.path import join, realpath, dirname
 import urllib.request

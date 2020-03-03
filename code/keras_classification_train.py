@@ -1,5 +1,4 @@
 import numpy as np
-import os
 import keras as k
 import lycon
 import pandas as pd
