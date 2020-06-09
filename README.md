@@ -6,7 +6,7 @@
 
 **Dataset Expanded!** We have exapned the initial relase (version `1.0`) of our dataset with more images!
 The most recent version `1.1` now contains `8573` images. Besides adding more images, all other settings remain the same.
-_Note that the classification and the genertive results her and in the paper still correspond to the version `1.0` of our dataset._
+_Note that the classification and the genertive results here and in the paper still correspond to the version `1.0` of our dataset._
 
 ## The Dataset
 
