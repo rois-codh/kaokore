@@ -75,7 +75,7 @@ def download_and_check_image(iurl):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Download the KaoKore Dataset.')
     parser.add_argument('--dir', type=str, help='Directory in which the downloaded dataset is stored', default='kaokore')
-    parser.add_argument('--dataset_version', type=str, help='The version of dataset', default='1.2', choices=['1.0', '1.1', '1.2'])
+    parser.add_argument('--dataset_version', type=str, help='The version of dataset', default='1.0', choices=['1.0', '1.1', '1.2'])
     parser.add_argument('--force', help='Force redownloading of already downloaded images', action='store_true')
     parser.add_argument('--threads', type=int, help='Number of simultaneous threads to use for downloading', default=16)
     parser.add_argument('--ssl_unverified_context', help='Force to use unverified context for SSL', action='store_true')

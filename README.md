@@ -38,7 +38,7 @@ KaoKore dataset contains image files, each being an color (RGB) image of size `2
 
 ## Get the data 💾
 
-🌟 You can run [`python3 download.py`](download.py) download KaoKore datasets. The default setting downloads the most recent version `1.2` of the dataset. To try out older version (e.g. `1.0`), please use `python3 download.py --dataset_version 1.0`. For version numbers plese refer to **Dataset History** above.
+🌟 You can run [`python3 download.py`](download.py) download KaoKore datasets. The default setting downloads the initial version `1.0` of the dataset. **To try out newer version (e.g. `1.2`), please use `python3 download.py --dataset_version 1.2`**. For version numbers plese refer to **Dataset History** above.
 Also, see the output of `download.py --help` for more details. 
 
 It is known that some conda installations may have trouble looking for SSL certificates. If that is the case, you could use `download.py --ssl_unverified_context`, **at your own risk and only if you know what you are doing**, to disable the certificate verification. Also it is reported that the default downlaod concurrency `--threads 16` may be too high for some network/machines. In that case please try a lower one.
