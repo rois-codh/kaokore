@@ -79,13 +79,12 @@ If you use any of the Kaokore datasets in your work, we would appreciate a refer
 **KaoKore dataset etc. Yingtao Tian et al. [arXiv:2002.08595](https://arxiv.org/abs/2002.08595)** update the link
 
 ```latex
-@misc{tian2020kaokore,
-    title={KaoKore: A Pre-modern Japanese Art Facial Expression Dataset},
-    author={Yingtao Tian and Chikahiko Suzuki and Tarin Clanuwat and Mikel Bober-Irizar and Alex Lamb and Asanobu Kitamoto},
-    year={2020},
-    eprint={2002.08595},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+@inproceedings{tian2020kaokore,
+    title      = "{KaoKore: A Pre-modern Japanese Art Facial Expression Dataset}",
+    author     = {Yingtao Tian and Chikahiko Suzuki and Tarin Clanuwat and Mikel Bober-Irizar and Alex Lamb and Asanobu Kitamoto},
+    booktitle  = "Proceedings of the International Conference on Computational Creativity",
+    year       = "2020",
+    pages      = "415--422"
 }
 ```
 
