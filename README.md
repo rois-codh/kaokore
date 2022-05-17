@@ -8,7 +8,7 @@
 **Dataset History** We are keeping expanding the dataset. Besides adding more images, all other settings remain the same.The update history is:
 
 * Version `1.3`: Exapnded to `9683` images. Most recent version
-* Version `1.2`: Exapnded to `8848` images. Most recent version
+* Version `1.2`: Exapnded to `8848` images.
 * Version `1.1`: Exapnded to `8573` images. 
 * Version `1.0`: `5552` images. The initial relase.
 
