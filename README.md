@@ -5,14 +5,16 @@
 📚 [Read the paper](https://arxiv.org/abs/2002.08595)  to learn more about Kaokore dataset, our motivations in making them, as well as creative usage of it! The paper is in [the proceedings](http://computationalcreativity.net/iccc20/proceedings/) of the Eleventh International Conference on Computational Creativity, ICCC’20.
 
 
-**Dataset History** We are keeping expanding the dataset. Besides adding more images, all other settings remain the same.The update history is:
+**Dataset History** 
 
-* Version `1.3`: Exapnded to `9683` images. Most recent version
+We are keeping expanding the dataset. Besides adding more images, all other settings remain the same.The update history is:
+
+* Version `1.3`: Exapnded to `9683` images. Most recent version.
 * Version `1.2`: Exapnded to `8848` images.
 * Version `1.1`: Exapnded to `8573` images. 
 * Version `1.0`: `5552` images. The initial relase.
 
-_Note that the classification and the genertive results here and in the paper still correspond to the version `1.0` of our dataset._
+**Note that the classification and the generative results here and in the paper correspond to the version `1.0` of our dataset.**
 
 ## The Dataset
 
