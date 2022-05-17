@@ -1,0 +1,13 @@
+gender	status
+2	4
+
+gender
+	0	male
+	1	female
+
+status
+	0	noble
+	1	warrior
+	2	incarnation
+	3	commoner
+
