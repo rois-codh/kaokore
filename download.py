@@ -40,11 +40,11 @@ def load_urls(urls_file):
     return iurls
 
 
-def download_and_check_image(iurl):
-    index, url = iurl
+def download_and_check_image(params):
+    images_dir, index, url, force = params
     save_file = join(images_dir, '%08d.jpg' % index)
     try:
-        if args.force or not os.path.isfile(save_file):
+        if force or not os.path.isfile(save_file):
             # Load into bytes
             img_data = urllib.request.urlopen(url).read()
 
@@ -61,10 +61,7 @@ def download_and_check_image(iurl):
                 open(save_file, 'wb').write(img_data)
             img.close()
         else:
-            global redownloading_warning
-            if not redownloading_warning:
-                print('[WARN] Some images already exist, and are not being redownloaded. Use --force to redownload these')
-                redownloading_warning = True
+            print('[WARN] Some images already exist, and are not being redownloaded. Use --force to redownload these')
     except KeyboardInterrupt:
         print('KeyboardInterrupt: Exiting early!')
         sys.exit(130)  # Avoid humungous backtraces when ctrl+c is pressed
@@ -101,12 +98,14 @@ if __name__ == '__main__':
 
     pool = multiprocessing.Pool(args.threads)
 
+    zip_params = [(images_dir, *iurl, args.force) for iurl in iurls]
+
     if tqdm:  # Use tqdm progressbar
         bar = tqdm(total=len(iurls))
-        for i, _ in enumerate(pool.imap_unordered(download_and_check_image, iurls)):
+        for i, _ in enumerate(pool.imap_unordered(download_and_check_image, zip_params)):
             bar.update()
     else:  # Use a basic status print
-        for i, _ in enumerate(pool.imap_unordered(download_and_check_image, iurls)):
+        for i, _ in enumerate(pool.imap_unordered(download_and_check_image, zip_params)):
             print('Download images: %7d / %d Done' % (i + 1, len(iurls)), end='\r', flush=True)
     print()
 
