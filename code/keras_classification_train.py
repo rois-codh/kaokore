@@ -26,7 +26,7 @@ parser.add_argument('--image_size', type=int, default=256)
 parser.add_argument('--batch-size', type=int, default=32)
 parser.add_argument('--epochs', type=int, default=20)
 parser.add_argument('--optimizer', type=str, choices=['sgd', 'adam'], default='adam')
-parser.add_argument('--lr-adjust-freq' , type=int, default=10, help='How many epochs per LR adjustment (*=0.1)')
+parser.add_argument('--lr-adjust-freq', type=int, default=10, help='How many epochs per LR adjustment (*=0.1)')
 # For Adam:
 #   Should use lr = 0.001
 # For SGD:
@@ -46,19 +46,21 @@ image_dir = f'{args.root}/images_256/'
 num_classes = 2 if args.label == 'gender' else 4
 gen_to_cls = {'male': 0, 'female': 1} if args.label == 'gender' else {'noble': 0, 'warrior': 1, 'incarnation': 2, 'commoner': 3}
 
+
 def lr_scheduler(epoch):
     lr = args.lr * (0.1**(epoch // args.lr_adjust_freq))
     return lr
+
 
 class ModelSequence(k.utils.Sequence):
     def __init__(self, df, batch_size):
         self.x = df['image'].apply(lambda x: f'{image_dir}/{x}').values
         self.u = df[args.label].values
         self.batch_size = batch_size
-        
+
     def __len__(self):
         return int(np.ceil(len(self.x) / float(self.batch_size)))
-    
+
     def load(self, fn):
         img = lycon.load(fn)
         img = lycon.resize(img, args.image_size, args.image_size)
@@ -80,6 +82,7 @@ class ModelSequence(k.utils.Sequence):
 seq_train = ModelSequence(df[df.set == 'train'], batch_size=args.batch_size)
 seq_valid = ModelSequence(df[df.set == 'dev'], batch_size=args.batch_size)
 
+
 def build_model():
     input_tensor = Input(shape=(args.image_size, args.image_size, 3))
 
@@ -89,7 +92,6 @@ def build_model():
         # input_shape=(args.image_size, args.image_size, 3),
         classes=num_classes,
         pooling='avg')
-    
 
     output_tensor = Dense(num_classes, activation='softmax')(base_model.output)
     model = Model(inputs=input_tensor, outputs=output_tensor)
@@ -110,7 +112,7 @@ model.summary()
 model.fit_generator(seq_train, epochs=args.epochs, verbose=1, validation_data=seq_valid,
                     callbacks=[LearningRateScheduler(lr_scheduler)])
 
-print('Dev set: ' , model.evaluate_generator(seq_valid, verbose=1))
+print('Dev set: ', model.evaluate_generator(seq_valid, verbose=1))
 
 seq_test = ModelSequence(df[df.set == 'test'], batch_size=args.batch_size)
-print('Test set: ' , model.evaluate_generator(seq_test, verbose=1))
+print('Test set: ', model.evaluate_generator(seq_test, verbose=1))
